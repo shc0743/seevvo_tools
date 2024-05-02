@@ -27,6 +27,14 @@
 *.lib
 
 # Executables
-*.exe
+#*.exe
 *.out
 *.app
+
+
+# Others
+out
+ipch
+*.ipch
+*.VC.db
+FileContentIndex
