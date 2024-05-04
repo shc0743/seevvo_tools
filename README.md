@@ -9,7 +9,9 @@ A series of utilities that can be used on seevvo or other devices to improve exp
 ## SeewoTimelyFuck
 定时干掉希沃管家，以实现在知道自动关机时间的前提下，可以全自动阻止自动关机
 
-**注意**: 此项目功能基本完成，但ui还需要进一步加强，部分提示框十分明显，对于管理严格的学校暂时不建议使用
+**注意**: 如果需要去除干掉希沃的提示，可在程序同级目录下创建 `<程序名>.exe.prevent_ixmessages` 文件（只要文件存在就行）
+
+**提示**: customized-notification-window库位于[MyLearn](https://github.com/shc0743/MyLearn/tree/main)
 
 # License
 所有本repo下代码，如无特殊说明，都是[GPL-3.0](./LICENSE)许可

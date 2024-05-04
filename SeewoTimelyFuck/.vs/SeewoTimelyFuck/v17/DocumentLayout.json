@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7C36A860-C048-4563-A5A9-E8B0D519B0C7}|SeewoTimelyFuck\\SeewoTimelyFuck.vcxproj|D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\SeewoTimelyFuck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7C36A860-C048-4563-A5A9-E8B0D519B0C7}|SeewoTimelyFuck\\SeewoTimelyFuck.vcxproj|solutionrelative:SeewoTimelyFuck\\SeewoTimelyFuck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C36A860-C048-4563-A5A9-E8B0D519B0C7}|SeewoTimelyFuck\\SeewoTimelyFuck.vcxproj|D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\ix_ui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7C36A860-C048-4563-A5A9-E8B0D519B0C7}|SeewoTimelyFuck\\SeewoTimelyFuck.vcxproj|solutionrelative:SeewoTimelyFuck\\ix_ui.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +30,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ix_ui.cpp",
+              "DocumentMoniker": "D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\ix_ui.cpp",
+              "RelativeDocumentMoniker": "SeewoTimelyFuck\\ix_ui.cpp",
+              "ToolTip": "D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\ix_ui.cpp",
+              "RelativeToolTip": "SeewoTimelyFuck\\ix_ui.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-04T07:56:54.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SeewoTimelyFuck.cpp",
               "DocumentMoniker": "D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\SeewoTimelyFuck.cpp",
               "RelativeDocumentMoniker": "SeewoTimelyFuck\\SeewoTimelyFuck.cpp",
               "ToolTip": "D:\\software\\Program\\source\\VSProjects\\SeewoTimelyFuck\\SeewoTimelyFuck\\SeewoTimelyFuck.cpp",
               "RelativeToolTip": "SeewoTimelyFuck\\SeewoTimelyFuck.cpp",
-              "ViewState": "AQIAAJ8AAAAAAAAAAAAAAK4AAAAUAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAQwDAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-02T12:35:33.694Z",
               "EditorCaption": ""

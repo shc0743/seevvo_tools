@@ -24,6 +24,9 @@
     <ClCompile Include="service.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ix_ui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\resource\tool.h">
@@ -32,5 +35,13 @@
     <ClInclude Include="service.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="cnw_user.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="customized-notification-window_x64.lib">
+      <Filter>资源文件</Filter>
+    </Library>
   </ItemGroup>
 </Project>

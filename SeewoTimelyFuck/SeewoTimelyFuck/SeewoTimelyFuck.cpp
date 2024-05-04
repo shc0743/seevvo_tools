@@ -9,6 +9,11 @@ wchar_t SERVICE_NAMEDPIPE_NAME[256] = L"\\\\.\\pipe\\seewo-servicing-{ad7ca1b0-"
 wstring szSvcName;
 vector<wstring> szStartTimes;
 
+int ixui(int type);
+
+#pragma comment(linker,"\"/manifestdependency:type='win32' \
+name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
+processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 
 
 int main()
@@ -33,6 +38,14 @@ int main()
 		wcscat_s(SERVICE_NAMEDPIPE_NAME, svcName.c_str());
 		SeewoTimelyFuckService ctsvc(svcName);
 		return ctsvc.StartAsService() ? 0 : GetLastError();
+	}
+
+	if (cl.getopt(L"testsigning")) {
+		fstream fp(GetProgramInfo().name + ".data", ios::app);
+		fp << "00:00:00" << endl;
+		fp.close();
+
+		return Process.StartAndWait(L"\"" + GetProgramDirW() + L"\" --testsigningv2");
 	}
 
 	if (cl.getopt(L"x", svcName) != 0 && (!svcName.empty())) {
@@ -74,12 +87,17 @@ int main()
 
 	if (cl.getopt(L"ix1")) {
 		FreeConsole();
-		if (cl.getopt(L"ix1n")) {
-			MessageBoxTimeoutW(0, L"Seewo reopened", L"", 0, 0, 2000);
-			return 0;
-		}
-		MessageBoxTimeoutW(0, L"Seewo closed", L"", 0, 0, 2000);
-		return 0;
+		(void)CoInitialize(NULL);
+		LoadLibraryW(L"Comctl32.lib");
+		//INITCOMMONCONTROLSEX icce{};
+		//icce.dwSize = sizeof(icce);
+		//icce.dwICC = ICC_ALL_CLASSES;
+		//{ (void)0; }
+		//if (!InitCommonControlsEx(&icce)) {
+		//	return GetLastError();
+		//}
+
+		return ixui((cl.getopt(L"ix1n")) ? 1 : 0);
 	}
 
 	PCWSTR sstip = L"";
@@ -136,6 +154,9 @@ int main()
 	sstip = L"成功。";
 	w();
 	Sleep(2000);
+	if (cl.getopt(L"testsigningv2")) {
+		Process.StartOnly(L"\"" + GetProgramDirW() + L"\" -x" + sname);
+	}
 	return 0;
 }
 
